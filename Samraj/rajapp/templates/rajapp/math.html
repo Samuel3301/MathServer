@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+<body bgcolor="violet">
+<h1 align="center">Churn Rate calculator</h1> 
+<h2 align="center">SamuelRaj S (26002614)</h2>
+
+<form method="POST">
+    {%csrf_token %}
+    <label>Initial Customer:</label>
+    <input type="text" name="initialcust" value="{{c}}"><br><br>
+    <label>Present customer:</label>
+    <input type="text" name="custlost" value="{{n}}"><br><br>
+    <input type="submit" value="Calculate"><br><br>
+    <label>Churn Rate:</label>
+    <input type="text" value="{{churn_rate}}"><br><br>
+</form>
+
+</body>
+</html>
+
+
+
+
